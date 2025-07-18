@@ -1,0 +1,297 @@
+.projects {
+  padding: 6rem 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Josefin Sans', sans-serif; /* Added font-family for consistency */
+}
+.projects h2 {
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Styles for the Add Project Form */
+.add-project-form {
+  background: #024b7075;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.802);
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.add-project-form h2 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group .form-label {
+  display: block;
+  font-weight: bolder;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.form-group .form-input {
+  background: transparent;
+  border: 1px solid #024c70;
+  color: #fff; /* Text color for input */
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-group .form-input::placeholder {
+  color: #ffffff4b;
+}
+
+.form-group .form-input::-webkit-input-placeholder {
+  color: #ffffff4b;
+}
+
+/* Specific styles for date inputs */
+.date-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* Ensure items align to the start of the cross-axis (top) and main-axis (left) */
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.date-input-wrapper {
+  /* Prevent growing and shrinking, base width on content or min/max */
+  flex: 0 0 auto;
+  min-width: 150px; /* Ensure date inputs don't get too small */
+  /* Allow them to take up roughly half the space on larger screens, but not stretch */
+  max-width: calc(50% - 0.5rem);
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-shrink: 0; /* Prevent shrinking if space is tight */
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto; /* Override full width for checkbox */
+  margin-top: 0;
+}
+
+.add-project-button {
+  background: transparent;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  border: 2px solid #024c70;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1.5rem;
+}
+
+.add-project-button:hover {
+  background-color: #010136;
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 150, 255, 0.9);
+}
+
+.mandatory {
+  color: #ff4d4d; /* Red color for mandatory asterisk */
+  margin-left: 0.2rem;
+}
+
+/* Existing Projects Display Styles */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    padding: 5rem 1rem 2rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .add-project-form {
+    padding: 1.5rem;
+  }
+
+  .date-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.project-card {
+  background: #024b705b; /* Glassmorphism effect */
+  border: 1px solid #ffffff39;
+  border-radius: 20px; /* Adjusted border-radius for consistency */
+  padding: 1.5rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.802); /* Adjusted shadow for consistency */
+  position: relative; /* For delete button positioning */
+}
+
+.project-card:hover {
+  box-shadow: 0 0 25px rgba(0, 150, 255, 0.9); /* Hover effect */
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem; /* Adjusted margin */
+  color: #fff; /* White color for titles */
+}
+
+.project-dates {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tech-tag {
+  background: #f0f0f0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  background-color: #024b7091; /* Button-like styling */
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #007bff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-links a:hover {
+  background-color: #010136;
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0 0 25px rgba(0, 150, 255, 0.9);
+}
+
+/* Delete Button for Projects */
+.delete-project-button {
+  position: absolute;
+  right: .2rem;
+  top: 10px;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 5px;
+  height: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+  transition:0.2s ease, transform 0.2s ease;
+}
+
+.delete-project-button:hover {
+  transform: scale(1.1);
+  color: #ff4d4d;
+}
+
+/* Message Box Styles (reused from skill.css for consistency) */
+.custom-message-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #024b709e;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  z-index: 2000;
+  text-align: center;
+  max-width: 350px;
+  width: 90%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.custom-message-box p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.custom-message-box button {
+  background-color: #024b7091;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.custom-message-box button:hover {
+  background-color: #010136;
+  transform: translateY(-2px);
+}
+
+.custom-message-box button#cancelBtn { /* Renamed from cancelDeleteBtn for generic use */
+  background-color: #ccc;
+  border: 1px solid #024c70;
+  color: #333;
+}
+
+.custom-message-box button#cancelBtn:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.no-projects-message {
+  color: #ccc;
+  text-align: center;
+  grid-column: 1 / -1; /* Center across all columns */
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}

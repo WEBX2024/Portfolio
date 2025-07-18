@@ -1,0 +1,118 @@
+.about {
+  padding: 8rem 0 4rem;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(2, 76, 112, 0.05) 0%, rgba(1, 1, 54, 0.05) 100%);
+}
+
+.about-content {
+  display: flex;
+  gap: 4rem;
+  margin-top: 2rem;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1.2;
+}
+
+.about-image {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-frame {
+  width: 320px;
+  height: 320px;
+  border-radius: 20px;
+  background: rgba(1, 1, 54, 0.1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(2, 76, 112, 0.2);
+  transition: all 0.3s ease;
+}
+.profile-frame:hover{
+    box-shadow: 0 0 25px rgba(0, 150, 255, 0.9); 
+}
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.3s ease;
+}
+
+.profile-frame:hover {
+  transform: translateY(-10px);
+}
+
+.profile-frame:hover .profile-img {
+  transform: scale(1.05);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.about-description p {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.8;
+  color: #d4c8c8;
+  margin-bottom: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.about-description p:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 968px) {
+  .about-content {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  .profile-frame {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 6rem 0 3rem;
+  }
+
+  .about-content {
+    padding: 0 1.5rem;
+  }
+
+  .about-description p {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile-frame {
+    width: 240px;
+    height: 240px;
+  }
+}
