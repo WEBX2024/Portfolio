@@ -1,0 +1,57 @@
+/**
+ * Projects data
+ */
+
+export const projects = [
+  {
+    id: 'project-1',
+    name: 'Agentic Opportunity Radar & Tracker',
+    type: 'Client Project',
+    date: 'August 2025 – February 2026',
+    description: 'An AI-powered opportunity discovery and tracking system designed to automatically discover, process, retrieve, and rank tender opportunities from heterogeneous web sources. Built a LangGraph-based multi-agent pipeline for crawling, extraction, RAG retrieval, and ranking.',
+    impact: '~70% reduction in manual search effort, ~85% accuracy in opportunity classification',
+    tech: ['LangGraph', 'Python', 'RAG', 'LLMs', 'Vector Search'],
+    image: '/images/project1.png',
+    github: null,
+    live: null,
+    featured: true,
+  },
+  {
+    id: 'project-2',
+    name: 'TitanoOS – Robot Controlling Portal',
+    type: 'Client Project',
+    date: 'February 2026 – Present',
+    description: 'A full-stack web portal serving as a control point for robotic systems in Europe. Developed dynamic interfaces, modular data-heavy workflows, and integrated them with REST APIs for data exchange between the UI, backend services, and robotic systems.',
+    tech: ['Python', 'React.js', 'SQLite', 'REST APIs', 'JavaScript', 'HTML5', 'CSS3'],
+    image: '/images/project2.png',
+    github: null,
+    live: null,
+    featured: true,
+  },
+  {
+    id: 'project-3',
+    name: 'Foundational Voice AI Conversational Agent',
+    type: 'Client Project',
+    date: 'August 2025 – February 2026',
+    description: 'A real-time conversational Voice AI prototype designed to process spoken user input, identify intent, generate an intelligent response, and return synthesized speech.',
+    impact: 'Engineered conversation state management resulting in ~90% end-to-end conversational latency reduction.',
+    tech: ['Deepgram', 'Sarvam AI', 'GROQ', 'GPT-12b', 'STT', 'TTS'],
+    image: '/images/project3.png',
+    github: null,
+    live: null,
+    featured: true,
+  },
+  {
+    id: 'project-4',
+    name: 'IMMORTAL 2.0 – Smart Healthcare Platform',
+    type: 'Government-Aided, IIT Kharagpur Monitored College Project',
+    date: 'August 2023 – June 2024',
+    description: 'A smart healthcare platform for rural healthcare delivery in constrained/disaster-prone environments. Developed responsive interfaces, MongoDB schemas, and integrated data capture forms with Python APIs optimized for low-bandwidth Zigbee environments.',
+    impact: 'Scaled to thousands of patient records, improving healthcare accessibility in disaster-prone regions.',
+    tech: ['HTML', 'CSS', 'Bootstrap', 'MongoDB', 'Python APIs', 'Zigbee'],
+    image: '/images/project4.png',
+    github: null,
+    live: null,
+    featured: false,
+  },
+];
