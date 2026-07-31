@@ -30,7 +30,7 @@ export default function About() {
             </p>
           ))}
 
-          <div className="about__highlights" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-4)' }}>
+          <div className="about__highlights" style={{ display: 'grid', gap: 'var(--space-4)' }}>
             {about.highlights.map((item) => (
               <div key={item.text} className="about__highlight bento-box" style={{ padding: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
                 <span className="about__highlight-icon" aria-hidden="true">

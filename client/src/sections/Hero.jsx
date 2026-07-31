@@ -11,8 +11,7 @@ export default function Hero() {
       <div className="hero__bg" style={{
         backgroundImage: `url('/images/user_hero_bg.jpg')`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
+        backgroundPosition: 'center'
       }}>
         <ParticleBackground />
       </div>

@@ -271,6 +271,16 @@ p {
 }
 
 @media (max-width: 767px) {
+  :root {
+    --container-padding: var(--space-4);
+    --section-padding: var(--space-12);
+  }
+
   h1 { font-size: var(--font-size-3xl); }
   h2 { font-size: var(--font-size-2xl); }
+
+  /* Ensure inputs never auto-zoom on iOS Safari */
+  input, textarea, select {
+    font-size: 1rem !important;
+  }
 }

@@ -14,7 +14,7 @@ export default function Projects() {
       <div className="carousel-container">
         <div className="carousel-track">
           {[...projects, ...projects].map((project, index) => (
-            <div key={`${project.id}-${index}`} style={{ width: '380px', flexShrink: 0 }}>
+            <div key={`${project.id}-${index}`} className="project-card-wrapper">
               <ProjectCard project={project} />
             </div>
           ))}

@@ -46,20 +46,27 @@ export default function Navbar() {
   );
 
   return (
-    <motion.nav 
-      className="navbar" 
-      role="navigation" 
-      aria-label="Main navigation" 
-      onKeyDown={handleKeyDown}
-      initial={{ y: -100, x: '-50%', opacity: 0 }}
-      animate={{ y: 0, x: '-50%', opacity: 1 }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
-    >
-      <div className="container navbar__inner">
-        <a href="#" className="navbar__logo" onClick={closeMenu}>
-          {personal.firstName}
-          <span>.</span>
-        </a>
+    <>
+      <div
+        className={`navbar-backdrop${isOpen ? ' navbar-backdrop--open' : ''}`}
+        onClick={closeMenu}
+        aria-hidden="true"
+      />
+      <motion.nav 
+        className="navbar" 
+        role="navigation" 
+        aria-label="Main navigation" 
+        onKeyDown={handleKeyDown}
+        initial={{ y: -100, x: '-50%', opacity: 0 }}
+        animate={{ y: 0, x: '-50%', opacity: 1 }}
+        transition={{ duration: 0.5, ease: 'easeOut' }}
+      >
+        <div className="container navbar__inner">
+          <a href="#" className="navbar__logo" onClick={closeMenu}>
+            <span className="navbar__logo-desktop">{personal.firstName}</span>
+            <span className="navbar__logo-mobile">A</span>
+            <span>.</span>
+          </a>
 
         <button
           className={`navbar__toggle${isOpen ? ' navbar__toggle--open' : ''}`}
@@ -101,5 +108,6 @@ export default function Navbar() {
         </div>
       </div>
     </motion.nav>
+    </>
   );
 }

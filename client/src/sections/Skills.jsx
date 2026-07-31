@@ -13,7 +13,7 @@ export default function Skills() {
       subtitle="Technologies and tools I use to bring ideas to life."
       alt
     >
-      <div className="skills__categories" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 'var(--space-6)' }}>
+      <div className="skills__categories">
         {skillCategories.map((category, index) => (
           <ScrollReveal key={category.name} delay={0.1 * index} className="skills__category bento-box">
             <h3 className="skills__category-title">
