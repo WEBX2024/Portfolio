@@ -759,6 +759,9 @@
   position: relative;
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
 }
 
 .experience__timeline::before {
@@ -774,11 +777,6 @@
 .experience-card {
   position: relative;
   padding-left: var(--space-10);
-  margin-bottom: var(--space-12);
-}
-
-.experience-card:last-child {
-  margin-bottom: 0;
 }
 
 .experience-card__dot {
