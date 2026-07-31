@@ -20,7 +20,7 @@ export default function EducationCard({ entry }) {
         </div>
       </div>
 
-      <div className="experience-card__body" style={{ padding: 'var(--space-4) var(--space-6)' }}>
+      <div className="experience-card__body">
         <p style={{ margin: 0, fontSize: 'var(--font-size-sm)', color: 'var(--color-text-secondary)' }}>
           <strong>{scoreLabel}:</strong> {score}
         </p>

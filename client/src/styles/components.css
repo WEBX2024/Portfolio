@@ -112,7 +112,7 @@
 .theme-toggle-btn:hover {
   background: var(--liquid-glass-bg-hover);
   border-color: var(--color-accent);
-  box-shadow: inset 2px 2px 0px -2px rgba(255, 255, 255, 0.95), inset 0 0 5px 1px rgba(255, 255, 255, 0.8), 0 0 15px var(--color-accent-glow);
+  box-shadow: inset 2px 2px 0px -2px rgba(255, 255, 255, 0.95), inset 0 0 5px 1px rgba(255, 255, 255, 0.8);
   transform: scale(1.05);
 }
 
@@ -264,7 +264,7 @@
 .btn--primary:hover {
   background: var(--color-accent-hover);
   color: var(--color-bg-primary);
-  box-shadow: inset 2px 2px 0px -2px rgba(255, 255, 255, 0.95), inset 0 0 6px 1px rgba(255, 255, 255, 0.8), var(--shadow-glow);
+  box-shadow: inset 2px 2px 0px -2px rgba(255, 255, 255, 0.95), inset 0 0 6px 1px rgba(255, 255, 255, 0.8), 0 6px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-2px);
 }
 
@@ -662,7 +662,7 @@
   border-color: var(--color-accent);
   color: var(--color-accent);
   background: var(--liquid-glass-bg-hover);
-  box-shadow: 0 0 20px var(--color-accent-glow), inset 2px 2px 0px -2px rgba(255, 255, 255, 0.9);
+  box-shadow: inset 2px 2px 0px -2px rgba(255, 255, 255, 0.9), inset 0 0 4px 1px rgba(255, 255, 255, 0.7);
   transform: translateY(-2px);
 }
 
