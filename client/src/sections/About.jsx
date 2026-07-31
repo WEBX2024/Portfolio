@@ -19,7 +19,7 @@ export default function About() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.2} className="about__text bento-box" style={{ background: 'transparent', padding: 0, border: 'none' }}>
+        <ScrollReveal delay={0.2} className="about__text bento-box">
           <h3>
             A passionate developer building for the web
           </h3>
@@ -30,9 +30,9 @@ export default function About() {
             </p>
           ))}
 
-          <div className="about__highlights" style={{ display: 'grid', gap: 'var(--space-4)' }}>
+          <div className="about__highlights">
             {about.highlights.map((item) => (
-              <div key={item.text} className="about__highlight bento-box" style={{ padding: 'var(--space-4)', display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
+              <div key={item.text} className="about__highlight">
                 <span className="about__highlight-icon" aria-hidden="true">
                   <IconMapper icon={item.icon} />
                 </span>

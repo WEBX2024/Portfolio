@@ -81,7 +81,7 @@
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
-  --radius-xl: 24px;
+  --radius-xl: 28px;
   --radius-full: 9999px;
 
   /* --- Shadows --- */
@@ -89,6 +89,22 @@
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.5);
   --shadow-glow: 0 0 30px var(--color-accent-glow);
+
+  /* --- Apple Liquid Glass Tokens --- */
+  --liquid-glass-bg: rgba(255, 255, 255, 0.07);
+  --liquid-glass-bg-hover: rgba(255, 255, 255, 0.14);
+  --liquid-glass-border: rgba(255, 255, 255, 0.2);
+  --liquid-glass-border-hover: rgba(255, 255, 255, 0.35);
+  --liquid-glass-shadow: 
+    inset 2px 2px 0px -2px rgba(255, 255, 255, 0.8),
+    inset 0 0 4px 1px rgba(255, 255, 255, 0.6),
+    0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --liquid-glass-shadow-hover: 
+    inset 2px 2px 0px -2px rgba(255, 255, 255, 0.95),
+    inset 0 0 6px 1px rgba(255, 255, 255, 0.8),
+    0 12px 36px 0 rgba(0, 0, 0, 0.5),
+    0 0 25px var(--color-accent-glow);
+  --liquid-glass-blur: blur(12px) saturate(180%);
 
   /* --- Transitions --- */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
